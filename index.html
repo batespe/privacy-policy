@@ -6,12 +6,12 @@
     <meta name="color-scheme" content="dark">
     <title>SimAngle Privacy Policy</title>
     <style>
-        :root { --accent: #38bdf8; --amber: #fbbf24; --text: #f8fafc; --muted: #9ba8bc; --line: rgba(255,255,255,.1); }
+        :root { --accent: #5abdf0; --amber: #fbbf24; --text: #f8fafc; --muted: #9ba8bc; --line: rgba(255,255,255,.1); }
         * { box-sizing: border-box; }
-        body { margin: 0; min-height: 100vh; padding: 40px 16px 64px; font-family: Roboto, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text); background: radial-gradient(circle at top, #27354b 0%, #121821 50%, #090c11 100%) fixed; }
+        body { margin: 0; min-height: 100vh; padding: 40px 16px 64px; font-family: Roboto, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text); background: radial-gradient(circle at top, #254565 0%, #03182f 50%, #000814 100%) fixed; }
         .container { max-width: 820px; margin: 0 auto; padding: 40px 32px; border-radius: 30px; background: rgba(255,255,255,.05); border: 1px solid var(--line); backdrop-filter: blur(20px); box-shadow: 0 20px 50px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.1); }
         header { display: flex; align-items: center; gap: 22px; padding-bottom: 28px; margin-bottom: 8px; border-bottom: 1px solid var(--line); }
-        .logo { flex: 0 0 auto; width: 88px; height: 88px; border-radius: 20px; box-shadow: 0 10px 30px rgba(37,99,235,.45); }
+        .logo { flex: 0 0 auto; width: 88px; height: 88px; border-radius: 20px; box-shadow: 0 10px 30px rgba(31,143,255,.45); }
         .brand { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); margin: 0 0 4px; }
         h1 { margin: 0; font-size: 30px; font-weight: 600; letter-spacing: 1px; color: #fff; }
         .updated { margin: 6px 0 0; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 2px; }
@@ -20,11 +20,11 @@
         ul { margin: 10px 0; padding-left: 0; list-style: none; }
         li { position: relative; padding-left: 22px; margin: 6px 0; color: #e2e8f0; }
         li::before { content: ""; position: absolute; left: 0; top: .75em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
-        .highlight { margin: 22px 0; padding: 18px 22px; border-radius: 20px; background: rgba(56,189,248,.08); border: 1px solid rgba(56,189,248,.3); }
+        .highlight { margin: 22px 0; padding: 18px 22px; border-radius: 20px; background: rgba(90,189,240,.08); border: 1px solid rgba(90,189,240,.3); }
         .highlight p { margin: 0; font-weight: 600; color: #fff; }
         .contact { margin-top: 24px; padding: 20px 24px; border-radius: 20px; background: rgba(255,255,255,.04); border: 1px solid var(--line); }
         .contact strong { color: var(--amber); }
-        a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(56,189,248,.4); }
+        a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(90,189,240,.4); }
         a:hover { border-bottom-color: var(--accent); }
         footer { margin-top: 40px; text-align: center; color: var(--muted); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
         @media (max-width: 520px) { .container { padding: 28px 20px; border-radius: 22px; } header { flex-direction: column; align-items: flex-start; gap: 16px; } h1 { font-size: 26px; } }
@@ -35,65 +35,33 @@
         <header>
 <svg class="logo" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SimAngle logo" viewBox="0 0 1024 1024">
   <defs>
-	<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-	  <stop offset="0" stop-color="#0ea5e9"/>
-	  <stop offset="0.5" stop-color="#2563eb"/>
-	  <stop offset="1" stop-color="#6d28d9"/>
-	</linearGradient>
-	<radialGradient id="glow" cx="50%" cy="35%" r="60%">
-	  <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
-	  <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-	</radialGradient>
+    <radialGradient id="bgGlow" cx="28%" cy="18%" r="100%">
+      <stop offset="0" stop-color="#254565"/>
+      <stop offset="0.45" stop-color="#03182f"/>
+      <stop offset="1" stop-color="#000814"/>
+    </radialGradient>
+    <linearGradient id="blueGrad" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#dceff8"/>
+      <stop offset="0.45" stop-color="#5abdf0"/>
+      <stop offset="1" stop-color="#1f8fff"/>
+    </linearGradient>
+    <linearGradient id="whiteGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d8d8d8"/>
+    </linearGradient>
+    <linearGradient id="innerDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00162c"/>
+      <stop offset="1" stop-color="#032244"/>
+    </linearGradient>
   </defs>
-  <rect width="1024" height="1024" rx="224" ry="224" fill="url(#bg)"/>
-  <rect width="1024" height="1024" rx="224" ry="224" fill="url(#glow)"/>
-
-  <defs>
-	<linearGradient id="arc" x1="0" y1="0" x2="1" y2="0">
-	  <stop offset="0" stop-color="#38bdf8"/>
-	  <stop offset="0.5" stop-color="#7dd3fc"/>
-	  <stop offset="1" stop-color="#38bdf8"/>
-	</linearGradient>
-  </defs>
-
-  <g transform="translate(512 530) scale(0.9) translate(-512 -503)">
-  <!-- Level line (through the vertex) -->
-  <line x1="196" y1="740" x2="828" y2="740" stroke="#e2e8f0" stroke-width="14" stroke-linecap="round"/>
-  <line x1="452" y1="712" x2="452" y2="768" stroke="#e2e8f0" stroke-width="14" stroke-linecap="round"/>
-  <line x1="572" y1="712" x2="572" y2="768" stroke="#e2e8f0" stroke-width="14" stroke-linecap="round"/>
-
-  <!-- FOV cone lines: glow then core -->
-  <g stroke-linecap="round" fill="none">
-	<path d="M512 740 L232 300 M512 740 L792 300" stroke="#7dd3fc" stroke-width="64" opacity="0.25"/>
-	<path d="M512 740 L232 300 M512 740 L792 300" stroke="#7dd3fc" stroke-width="40" opacity="0.45"/>
-	<path d="M512 740 L232 300 M512 740 L792 300" stroke="#f0f9ff" stroke-width="22"/>
-  </g>
-
-  <!-- Protractor arc: glow then core -->
-  <g stroke-linecap="round" fill="none">
-	<path d="M372.4 520.6 A260 260 0 0 1 651.6 520.6" stroke="#7dd3fc" stroke-width="80" opacity="0.25"/>
-	<path d="M372.4 520.6 A260 260 0 0 1 651.6 520.6" stroke="#7dd3fc" stroke-width="50" opacity="0.45"/>
-	<path d="M372.4 520.6 A260 260 0 0 1 651.6 520.6" stroke="#f0f9ff" stroke-width="28"/>
-  </g>
-
-  <!-- Arc tick marks -->
-  <g stroke="#1e3a8a" stroke-width="12" stroke-linecap="round">
-	<line x1="512" y1="478" x2="512" y2="514"/>
-	<line x1="584" y1="488" x2="576" y2="515"/>
-	<line x1="440" y1="488" x2="448" y2="515"/>
-  </g>
-
-  <!-- Monitors (top-down): centre flat, sides toed-in -->
-  <g fill="rgba(255,255,255,0.28)" stroke="#f0f9ff" stroke-width="18" stroke-linejoin="round">
-	<rect x="424" y="218" width="176" height="38" rx="10"/>
-	<rect x="255" y="276" width="176" height="38" rx="10" transform="rotate(-31.6 343 295)"/>
-	<rect x="593" y="276" width="176" height="38" rx="10" transform="rotate(31.6 681 295)"/>
-  </g>
-
-  <!-- Amber eye point / level bubble -->
-  <circle cx="512" cy="740" r="60" fill="#fbbf24" opacity="0.3"/>
-  <circle cx="512" cy="740" r="36" fill="#f59e0b"/>
-  <circle cx="512" cy="740" r="16" fill="#fef3c7"/>
+  <rect width="1024" height="1024" rx="224" ry="224" fill="url(#bgGlow)"/>
+  <rect x="45" y="45" width="934" height="934" rx="190" fill="none" stroke="#36516b" stroke-width="4" opacity="0.8"/>
+  <g transform="translate(512 512) scale(1.05) translate(-520 -430)">
+    <path fill="url(#whiteGrad)" d="M370 184 H695 L614 265 H455 C405 265 362 304 360 341 C358 370 377 392 412 392 H557 L474 480 H334 C256 480 211 423 211 368 C211 303 255 236 328 196 C342 189 355 185 370 184 Z"/>
+    <circle cx="718" cy="319" r="40" fill="none" stroke="#2e97ff" stroke-width="22"/>
+    <circle cx="718" cy="319" r="48" fill="none" stroke="#1179eb" stroke-width="4" opacity="0.8"/>
+    <path fill="url(#blueGrad)" d="M286 676 L612 348 L830 676 Z"/>
+    <path fill="url(#innerDark)" d="M438 603 L608 438 L718 603 Z"/>
   </g>
 </svg>
             <div>
