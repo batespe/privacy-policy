@@ -3,68 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
     <title>SimAngle Privacy Policy</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            line-height: 1.7;
-            color: #333;
-            background-color: #f8f9fa;
-        }
-
-        .container {
-            background: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            color: #1e40af;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            color: #2563eb;
-            margin-top: 30px;
-        }
-
-        .updated {
-            color: #666;
-            font-style: italic;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        a {
-            color: #2563eb;
-        }
+        :root { --accent: #38bdf8; --amber: #fbbf24; --text: #f8fafc; --muted: #9ba8bc; --line: rgba(255,255,255,.1); }
+        * { box-sizing: border-box; }
+        body { margin: 0; min-height: 100vh; padding: 40px 16px 64px; font-family: Roboto, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text); background: radial-gradient(circle at top, #27354b 0%, #121821 50%, #090c11 100%) fixed; }
+        .container { max-width: 820px; margin: 0 auto; padding: 40px 32px; border-radius: 30px; background: rgba(255,255,255,.05); border: 1px solid var(--line); backdrop-filter: blur(20px); box-shadow: 0 20px 50px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.1); }
+        header { display: flex; align-items: center; gap: 22px; padding-bottom: 28px; margin-bottom: 8px; border-bottom: 1px solid var(--line); }
+        .logo { flex: 0 0 auto; width: 88px; height: 88px; border-radius: 20px; box-shadow: 0 10px 30px rgba(37,99,235,.45); }
+        .brand { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); margin: 0 0 4px; }
+        h1 { margin: 0; font-size: 30px; font-weight: 600; letter-spacing: 1px; color: #fff; }
+        .updated { margin: 6px 0 0; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 2px; }
+        h2 { margin: 34px 0 10px; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); }
+        p { margin: 10px 0; color: #e2e8f0; }
+        ul { margin: 10px 0; padding-left: 0; list-style: none; }
+        li { position: relative; padding-left: 22px; margin: 6px 0; color: #e2e8f0; }
+        li::before { content: ""; position: absolute; left: 0; top: .75em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+        .highlight { margin: 22px 0; padding: 18px 22px; border-radius: 20px; background: rgba(56,189,248,.08); border: 1px solid rgba(56,189,248,.3); }
+        .highlight p { margin: 0; font-weight: 600; color: #fff; }
+        .contact { margin-top: 24px; padding: 20px 24px; border-radius: 20px; background: rgba(255,255,255,.04); border: 1px solid var(--line); }
+        .contact strong { color: var(--amber); }
+        a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(56,189,248,.4); }
+        a:hover { border-bottom-color: var(--accent); }
+        footer { margin-top: 40px; text-align: center; color: var(--muted); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+        @media (max-width: 520px) { .container { padding: 28px 20px; border-radius: 22px; } header { flex-direction: column; align-items: flex-start; gap: 16px; } h1 { font-size: 26px; } }
     </style>
 </head>
 <body>
     <div class="container">
+        <header>
+<svg class="logo" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SimAngle logo" viewBox="0 0 1024 1024">
+  <defs>
+	<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+	  <stop offset="0" stop-color="#0ea5e9"/>
+	  <stop offset="0.5" stop-color="#2563eb"/>
+	  <stop offset="1" stop-color="#6d28d9"/>
+	</linearGradient>
+	<radialGradient id="glow" cx="50%" cy="35%" r="60%">
+	  <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+	  <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+	</radialGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" ry="224" fill="url(#bg)"/>
+  <rect width="1024" height="1024" rx="224" ry="224" fill="url(#glow)"/>
 
-        <h1>SimAngle Privacy Policy</h1>
+  <defs>
+	<linearGradient id="arc" x1="0" y1="0" x2="1" y2="0">
+	  <stop offset="0" stop-color="#38bdf8"/>
+	  <stop offset="0.5" stop-color="#7dd3fc"/>
+	  <stop offset="1" stop-color="#38bdf8"/>
+	</linearGradient>
+  </defs>
 
-        <p class="updated">
-            Last Updated: 4 September 2026
-        </p>
+  <g transform="translate(512 530) scale(0.9) translate(-512 -503)">
+  <!-- Level line (through the vertex) -->
+  <line x1="196" y1="740" x2="828" y2="740" stroke="#e2e8f0" stroke-width="14" stroke-linecap="round"/>
+  <line x1="452" y1="712" x2="452" y2="768" stroke="#e2e8f0" stroke-width="14" stroke-linecap="round"/>
+  <line x1="572" y1="712" x2="572" y2="768" stroke="#e2e8f0" stroke-width="14" stroke-linecap="round"/>
 
-        <p>
-            Thank you for using SimAngle. This Privacy Policy explains how information is handled when you use the SimAngle mobile application ("the App").
-        </p>
+  <!-- FOV cone lines: glow then core -->
+  <g stroke-linecap="round" fill="none">
+	<path d="M512 740 L232 300 M512 740 L792 300" stroke="#7dd3fc" stroke-width="64" opacity="0.25"/>
+	<path d="M512 740 L232 300 M512 740 L792 300" stroke="#7dd3fc" stroke-width="40" opacity="0.45"/>
+	<path d="M512 740 L232 300 M512 740 L792 300" stroke="#f0f9ff" stroke-width="22"/>
+  </g>
+
+  <!-- Protractor arc: glow then core -->
+  <g stroke-linecap="round" fill="none">
+	<path d="M372.4 520.6 A260 260 0 0 1 651.6 520.6" stroke="#7dd3fc" stroke-width="80" opacity="0.25"/>
+	<path d="M372.4 520.6 A260 260 0 0 1 651.6 520.6" stroke="#7dd3fc" stroke-width="50" opacity="0.45"/>
+	<path d="M372.4 520.6 A260 260 0 0 1 651.6 520.6" stroke="#f0f9ff" stroke-width="28"/>
+  </g>
+
+  <!-- Arc tick marks -->
+  <g stroke="#1e3a8a" stroke-width="12" stroke-linecap="round">
+	<line x1="512" y1="478" x2="512" y2="514"/>
+	<line x1="584" y1="488" x2="576" y2="515"/>
+	<line x1="440" y1="488" x2="448" y2="515"/>
+  </g>
+
+  <!-- Monitors (top-down): centre flat, sides toed-in -->
+  <g fill="rgba(255,255,255,0.28)" stroke="#f0f9ff" stroke-width="18" stroke-linejoin="round">
+	<rect x="424" y="218" width="176" height="38" rx="10"/>
+	<rect x="255" y="276" width="176" height="38" rx="10" transform="rotate(-31.6 343 295)"/>
+	<rect x="593" y="276" width="176" height="38" rx="10" transform="rotate(31.6 681 295)"/>
+  </g>
+
+  <!-- Amber eye point / level bubble -->
+  <circle cx="512" cy="740" r="60" fill="#fbbf24" opacity="0.3"/>
+  <circle cx="512" cy="740" r="36" fill="#f59e0b"/>
+  <circle cx="512" cy="740" r="16" fill="#fef3c7"/>
+  </g>
+</svg>
+            <div>
+                <p class="brand">SimAngle</p>
+                <h1>Privacy Policy</h1>
+                <p class="updated">Last updated: 4 September 2026</p>
+            </div>
+        </header>
+
+        <p>Thank you for using SimAngle. This Privacy Policy explains how information is handled when you use the SimAngle mobile application ("the App").</p>
+
+        <div class="highlight"><p>SimAngle does not collect, store, transmit, sell, or share any personally identifiable information.</p></div>
 
         <h2>About SimAngle</h2>
-
-        <p>
-            SimAngle is a utility application designed for sim racing enthusiasts. The App provides tools including:
-        </p>
-
+        <p>SimAngle is a utility application designed for sim racing enthusiasts. The App provides tools including:</p>
         <ul>
             <li>Field of View (FOV) calculations</li>
             <li>Triple monitor setup calculations</li>
@@ -73,15 +117,7 @@
         </ul>
 
         <h2>Information We Collect</h2>
-
-        <p>
-            SimAngle does not collect, store, transmit, sell, or share any personally identifiable information.
-        </p>
-
-        <p>
-            The App does not require account registration and does not request personal details such as:
-        </p>
-
+        <p>The App does not require account registration and does not request personal details such as:</p>
         <ul>
             <li>Name</li>
             <li>Email address</li>
@@ -91,74 +127,44 @@
         </ul>
 
         <h2>Device Sensors</h2>
-
-        <p>
-            To provide angle measurement and spirit level functionality, SimAngle may access device sensors such as:
-        </p>
-
+        <p>To provide angle measurement and spirit level functionality, SimAngle may access device sensors such as:</p>
         <ul>
             <li>Accelerometer</li>
             <li>Gyroscope</li>
         </ul>
+        <p>Sensor data is processed locally on your device and is not transmitted to the developer or any third party.</p>
 
-        <p>
-            Sensor data is processed locally on your device and is not transmitted to the developer or any third party.
-        </p>
+        <h2>Photos &amp; Sharing</h2>
+        <p>The FOV calculator can generate an image of your setup. If you choose to save it, the App writes the image to your device's photo library; if you choose to share it, the image is handed to the app you select. SimAngle never reads existing photos and does not upload images anywhere.</p>
 
         <h2>Data Storage</h2>
-
-        <p>
-            Any settings or preferences stored by the App remain on your device. SimAngle does not maintain external databases containing user information.
-        </p>
+        <p>Any settings or preferences stored by the App remain on your device. SimAngle does not maintain external databases containing user information.</p>
 
         <h2>Analytics</h2>
-
-        <p>
-            SimAngle does not use analytics services to track user activity.
-        </p>
+        <p>SimAngle does not use analytics services to track user activity.</p>
 
         <h2>Advertising</h2>
-
-        <p>
-            SimAngle does not display third-party advertisements.
-        </p>
+        <p>SimAngle does not display third-party advertisements.</p>
 
         <h2>Data Sharing</h2>
-
-        <p>
-            Because no personal information is collected, no personal information is sold, shared, rented, or disclosed to third parties.
-        </p>
+        <p>Because no personal information is collected, no personal information is sold, shared, rented, or disclosed to third parties.</p>
 
         <h2>Children's Privacy</h2>
-
-        <p>
-            SimAngle does not knowingly collect personal information from children under the age of 13.
-        </p>
+        <p>SimAngle does not knowingly collect personal information from children under the age of 13.</p>
 
         <h2>Security</h2>
-
-        <p>
-            Since the App does not collect personal data, risks associated with transmitting personal information are minimized.
-        </p>
+        <p>Since the App does not collect personal data, risks associated with transmitting personal information are minimized.</p>
 
         <h2>Changes to This Privacy Policy</h2>
-
-        <p>
-            This Privacy Policy may be updated periodically to reflect improvements to the App or legal requirements.
-            Any changes will be posted on this page and will become effective immediately upon publication.
-        </p>
+        <p>This Privacy Policy may be updated periodically to reflect improvements to the App or legal requirements. Any changes will be posted on this page and will become effective immediately upon publication.</p>
 
         <h2>Contact</h2>
-
-        <p>
-            If you have any questions regarding this Privacy Policy, you may contact:
-        </p>
-
-        <p>
+        <p>If you have any questions regarding this Privacy Policy, you may contact:</p>
+        <div class="contact">
             <strong>Pete Bates</strong><br>
-            Email: simangle@batesuk.email</a>
-        </p>
-
+            Email: <a href="mailto:simangle@batesuk.email">simangle@batesuk.email</a>
+        </div>
     </div>
+    <footer>SimAngle &middot; Sim racing setup tools</footer>
 </body>
 </html>
